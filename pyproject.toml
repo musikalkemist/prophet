@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "prophet"
+version = "0.1.0"
+description = ""
+authors = ["Valerio Velardo <velardovalerio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+SpeechRecognition = "3.9.0"
+PyAudio = "0.2.12"
+google-cloud-texttospeech = "2.12.3"
+python-dotenv = "0.21.0"
+pydub = "0.25.1"
+revChatGPT = "0.0.44"
+
+[tool.poetry.dev-dependencies]
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+prophet = "prophet.run:run"
