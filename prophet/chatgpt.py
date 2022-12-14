@@ -11,7 +11,7 @@ class ChatGPT:
 
     def get_response(
         self, message_prompt: str, conversation_id: str = None, parent_id: str = None
-    ) -> Dict[str, str]:
+    ) -> str:
         response =  self.chatbot.get_chat_response(
             message_prompt,
             output="text",

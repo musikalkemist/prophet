@@ -1,3 +1,5 @@
+"""This module contains the main entry point for the Prophet application."""
+
 from prophet.audioplayer import AudioPlayer
 from prophet.chatgpt import ChatGPT
 from prophet.speechrecogniser import SpeechRecogniser
