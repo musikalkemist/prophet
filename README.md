@@ -3,6 +3,10 @@
 *prophet* is a command-line application that allows you to have a conversation 
 with ChatGPT - the newly released GPT-3 model from OpenAI - with your voice.
 
+## Video
+This *prophet* application was presented in a video on The Sound of AI 
+YouTube channel. You can watch it here: 
+
 ## Installation
 To install *prophet*, you can use the following command:
 
