@@ -16,7 +16,7 @@ After installing *poetry*, run the following command:
 python -m playwright install
 ```
 
-This will install the required browser plugins that will allow you to 
+This will install the required browser plugins that enable *prophet* to
 connect to ChatGPT via the *revChatGPT* library.
 
 
@@ -25,7 +25,7 @@ connect to ChatGPT via the *revChatGPT* library.
 ### Python version
 *prophet* requires Python 3.8.
 
-### *revChatGPT*
+### revChatGPT
 *prophet* uses the *revChatGPT* library to interact with the ChatGPT model.
 
 ### Setting up Google Cloud Text-To-Speech
@@ -40,7 +40,7 @@ In order to be able to use this service, you should:
 - setup authentication 
 - download a Json private key
 
-### *pydub*
+### pydub
 *prophet* uses *pydub* to play back MP3 files. You need to install *ffmpeg* to
 be able to use MP3s with *pydub*.
 
