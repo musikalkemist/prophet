@@ -29,7 +29,3 @@ def run():
         audio = speech_synthesiser.synthesise(response)
         print(f"Audio received from TTS and sent to AudioPlayer...")
         audio_player.play(audio)
-
-
-if __name__ == "__main__":
-    run()

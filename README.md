@@ -30,7 +30,12 @@ connect to ChatGPT via the *revChatGPT* library.
 *prophet* requires Python 3.8.
 
 ### revChatGPT
-*prophet* uses the *revChatGPT* library to interact with the ChatGPT model.
+*prophet* uses the *revChatGPT* library to interact with the ChatGPT model. 
+
+You have to create a *chatgptconfig.json* file in the *prophet* directory and
+pass a field called *session_token*. This is the session token that you get 
+from the ChatGPT website. To know how to do this, please check 
+*revChatGPT*'s wiki page.
 
 ### Setting up Google Cloud Text-To-Speech
 
