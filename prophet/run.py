@@ -1,5 +1,7 @@
 """This module contains the main entry point for the Prophet application."""
 
+from pathlib import Path
+
 from prophet.audioplayer import AudioPlayer
 from prophet.chatgpt import ChatGPT
 from prophet.speechrecogniser import SpeechRecogniser
@@ -15,7 +17,7 @@ def run():
     speech_recogniser = SpeechRecogniser()
     speech_synthesiser = GoogleSpeechSynthesiser()
     audio_player = AudioPlayer()
-    chat_gpt = ChatGPT()
+    chat_gpt = ChatGPT(Path(Path(__file__).parents[1], "chatgptconfig.json"))
 
     # Conversation loop
     while True:
@@ -27,3 +29,7 @@ def run():
         audio = speech_synthesiser.synthesise(response)
         print(f"Audio received from TTS and sent to AudioPlayer...")
         audio_player.play(audio)
+
+
+if __name__ == "__main__":
+    run()

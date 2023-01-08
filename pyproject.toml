@@ -12,7 +12,7 @@ PyAudio = "0.2.12"
 google-cloud-texttospeech = "2.12.3"
 python-dotenv = "0.21.0"
 pydub = "0.25.1"
-revChatGPT = "0.0.44"
+revChatGPT = "0.1.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.12.0"
